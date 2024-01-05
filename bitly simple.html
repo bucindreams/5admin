@@ -3,33 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
   <title>Proyek HTML Pertama</title>
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://bucindreams.github.io/5admin/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="https://bucindreams.github.io/5admin/css/style.css" rel="stylesheet">
     
     <!-- NEW ADD BY AGZ -->
     <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
     
 </head>
+<style>
+.centered-middle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.centered-button {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+
+
+</style>
 <body>
 
+
+                  
+<div class="centered-middle">
 
 
             <!-- Body Box AGZ -->
             <div class="container-fluid pt-4 px-4">
              <div class="row g-4">
               
+              <br><br><br><br><br><br><br><br>
            <!--[ BIT LY GENERATOR BY ARDA ]-->
              <div class="col-sm-12 col-xl-6">
                 <div class="bg-secondary rounded h-100 p-4">
                   <h6 class="mb-4"><i class="bx bx-link text-primary me-2"></i>BIT LY GENERATOR</h6>
                  <input type="text" name="inputLink" id="longUrlInput" placeholder="Enter Your Link" class="form-control" required>
-                 <div style="align-items: center;"><button onclick="shortenUrl()" class="btn btn-primary m-2">Submit</button></div>
-                </div>
+                 <div class="centered-button"><button onclick="shortenUrl()" class="btn btn-primary m-2">Submit</button></div>
+              </div>
              </div>
 
              <!-- RESULT BITLY -->
@@ -39,8 +60,8 @@
                  <div id="hasilContainer" style="display: none;">
                  <!-- <span id="shortenedUrl"></span> -->
                  <input type="text" id="shortenedUrl" class="form-control" readonly>
-             	<button onclick="salinHasil()" class="btn btn-primary m-2">Copy</button></div>
-               </div>
+             	<div class="centered-button"><button onclick="salinHasil()" class="btn btn-primary m-2">Copy</button></div>
+              </div>
              </div>
              
              
@@ -48,10 +69,14 @@
              
             </div>
            </div> <!-- End Body Box AGZ -->
+
+
+
+</div>
            
            
 	<!-- Bit Ly Generator -->
-    <script src="js/bitly.js"></script>
+    <script src="https://bucindreams.github.io/5admin/js/bitly.js"></script>
     
     
 </body>
