@@ -1,5 +1,5 @@
 function shortenUrl() {
-    const accessToken = '60f1723bb682775c33f113af292337ebb0f7fc4c'; // Gantilah dengan API Key Anda
+    const accessToken = 'c24478032c655d6a463600511fc99a17c75a6824'; // Gantilah dengan API Key Anda
     const longUrl = document.getElementById('longUrlInput').value;
 
     fetch('https://api-ssl.bitly.com/v4/shorten', {
